@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Detection</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #282c34; /* Dark background color */
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #000000; /* Header background color */
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      position: relative; /* Added for positioning */
+    }
+
+    #doneText {
+      position: absolute;
+      top: 50%;
+      right: 90px; /* Adjust the value as needed */
+      transform: translateY(-50%);
+      background-color: #0b0b0b; /* Green background color */
+      color: white;
+      padding: 12px 12px;
+      border-radius: 50px;
+    
+      border: solid white 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth transition effect */
+    
+      /* Additional styling for better visibility */
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    #doneText:hover {
+      background-color: #2a2626; /* Darker green on hover */
+    }
+    
+
+    #video {
+      border: 2px solid white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      margin-top: 20px;
+    }
+
+    canvas {
+      position: absolute;
+      border: 2px solid white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; align-items: center;">
+    <img src="" alt="" srcset="">
+    <h1>CIS PROJECT- Face Detection App </h1>
+    <div id="doneText">
+      Done by Anirudh (1DA21CS021)
+      <a href="https://github.com/YourGitHubUsername" target="_blank" style="margin-left: 10px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMRxFRCbpc8HvtVdPibndfhqnsLTKlH_72A&usqp=CAU" alt="GitHub Logo" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+  </header>
+  <video id="video" width="720" height="560" autoplay muted></video>
+  
+</body>
+
+</html>
